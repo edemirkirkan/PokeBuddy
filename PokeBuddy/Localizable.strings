@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  PokeBuddy
+
+  Created by Ege Demirkirkan on 19.08.2021.
+  
+*/
+
+"activities_screen_title" = "Activities";
+"activities_tab_bar_title" = "Activities";
+"buddy_profile_screen_title" = "My Buddy";
+"buddy_profile_tab_bar_title" = "My Buddy";
+"buddy_profile_heart_text" = "Collected hearts so far";
+"buddy_profile_time_text" = "Estimated number of days to the\nBest Buddy";
+"buddy_profile_delete_text" = "Delete Buddy";
+"buddy_profile_cancel_text" = "Cancel";
+"delete_buddy_confirmation_title" = "Are you sure you want to delete your buddy?";
+"delete_buddy_confirmation_text" = "You can add a new buddy later.";
+"auth_fail_msg_title" = "Authorization failed!";
+"auth_fail_msg_text" = "Please login again.";
+"buddy_fail_msg_title" = "You do not have any buddy!";
+"buddy_fail_msg_text" = "Please add a new buddy.";
+"settings_screen_title" = "Settings";
+"settings_tab_bar_title" = "Settings";
+"notifications_text" = "Notifications";
+"notifications_cell_text" = "Set notification for 30 minutes later";
+"notifications_permission_title" = "\"PokeBuddy\" Would Like to Send You Notifications";
+"notifications_permission_text" = "Notifications may include alerts, sounds, and icon badges. These can be configured in settings";
+"notifications_permission_allow" = "Allow";
+"notifications_permission_dont_allow" = "Don't Allow";
+"logout_text" = "Logout";
+"add_buddy_screen_title" = "Buddy Profile";
+"cancel_message" = "Cancel";
+"okay_message" = "OK";
+"multi_factor_selection_msg" = "Select factor to sign in.";
+"multi_factor_fail_msg" =  "Multi factor start sign in failed.";
+"multi_factor_verification_code_msg" = "Verification Code ";
+"multi_factor_finalize_fail_msg" = "Multi factor finalize sign in failed.";
+"confirmation_cancel_text" = "Cancel";
+"confirmation_delete_text" = "Delete";
+"add_buddy_description" = "Please enter the name of your Buddy and its current level.";
+"add_buddy_buddy_exists_header" = "MY BUDDY IS A:";
+"add_buddy_new_buddy_label" = "New Buddy";
+"add_buddy_existing_buddy_label" = "Existing Buddy";
+"add_buddy_buddy_level_header" = "BUDDY LEVEL:";
+"add_buddy_good_buddy_label" = "Good Buddy";
+"add_buddy_great_buddy_label" = "Great Buddy";
+"add_buddy_ultra_buddy_label" = "Ultra Buddy";
+"add_buddy_best_buddy_label" = "Best Buddy";
+"add_buddy_add_as_buddy_button" = "Add As My Buddy";
+"add_buddy_buddy_name_label" = "Buddy Name";
+

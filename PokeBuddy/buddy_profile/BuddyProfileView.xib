@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BuddyProfileView" customModule="PokeBuddy" customModuleProvider="target">
+            <connections>
+                <outlet property="buddyNameLabel" destination="vZN-lh-swy" id="eKB-aV-lqo"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="kmx-Y5-lc2"/>
+                <outlet property="estimatedDaysLabel" destination="3Rj-ib-HWF" id="kkz-Uu-ZtK"/>
+                <outlet property="estimatedDaysText" destination="6Hh-tg-IBB" id="EqZ-Uw-mcy"/>
+                <outlet property="heartCountLabel" destination="DYW-qC-W7m" id="hvG-jZ-p4F"/>
+                <outlet property="heartCountText" destination="DaY-AL-5eg" id="JRg-mi-Pma"/>
+                <outlet property="hideView" destination="Vjj-Of-BPf" id="XQK-2s-dDW"/>
+                <outlet property="loadingScreen" destination="0Qj-X0-KZa" id="hqB-Yr-7ah"/>
+                <outlet property="loadingSpinner" destination="QMp-fA-xPT" id="94Y-cf-BM0"/>
+                <outlet property="longSeperator" destination="ciy-Jg-CrB" id="WYX-KF-2vq"/>
+                <outlet property="shortSeperator" destination="kgo-JO-5mO" id="dsW-dZ-rAv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BuddyProfileView" customModule="PokeBuddy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yWq-Qj-hly">
+                    <rect key="frame" x="0.0" y="80" width="414" height="202"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBu-zA-4Cg">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_buddy_avatar_icon" translatesAutoresizingMaskIntoConstraints="NO" id="aN0-el-byx">
+                                    <rect key="frame" x="16" y="16" width="54" height="54"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="54" id="ZRm-z5-Hfr"/>
+                                        <constraint firstAttribute="width" constant="54" id="dqp-Tk-0ZQ"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZN-lh-swy">
+                                    <rect key="frame" x="86" y="31" width="308" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="24" id="OkG-4r-EfD"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="20"/>
+                                    <color key="textColor" name="PokeBuddy TextTitle"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58T-11-nzo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="0.5"/>
+                                    <color key="backgroundColor" name="PokeBuddy Seperator"/>
+                                    <color key="tintColor" name="PokeBuddy Seperator"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="0.5" id="2DO-4w-De6"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7QB-jz-q1e">
+                                    <rect key="frame" x="0.0" y="85.5" width="414" height="0.5"/>
+                                    <color key="backgroundColor" name="PokeBuddy Seperator"/>
+                                    <color key="tintColor" name="PokeBuddy Seperator"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="0.5" id="wt9-4F-N00"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="7QB-jz-q1e" secondAttribute="trailing" id="21m-c5-7sZ"/>
+                                <constraint firstItem="aN0-el-byx" firstAttribute="leading" secondItem="cBu-zA-4Cg" secondAttribute="leading" constant="16" id="6gv-qX-XBw"/>
+                                <constraint firstAttribute="bottom" secondItem="aN0-el-byx" secondAttribute="bottom" constant="16" id="BPF-KB-uM4"/>
+                                <constraint firstItem="7QB-jz-q1e" firstAttribute="leading" secondItem="cBu-zA-4Cg" secondAttribute="leading" id="E9W-9U-XQO"/>
+                                <constraint firstItem="vZN-lh-swy" firstAttribute="top" secondItem="cBu-zA-4Cg" secondAttribute="top" constant="31" id="JOQ-DT-fgw"/>
+                                <constraint firstAttribute="bottom" secondItem="7QB-jz-q1e" secondAttribute="bottom" id="RHM-Ih-KcZ"/>
+                                <constraint firstItem="aN0-el-byx" firstAttribute="top" secondItem="cBu-zA-4Cg" secondAttribute="top" constant="16" id="V2Y-P5-Kqq"/>
+                                <constraint firstAttribute="height" constant="86" id="WxM-mw-xK0"/>
+                                <constraint firstItem="58T-11-nzo" firstAttribute="top" secondItem="cBu-zA-4Cg" secondAttribute="top" id="YLx-Cm-BpE"/>
+                                <constraint firstItem="vZN-lh-swy" firstAttribute="leading" secondItem="aN0-el-byx" secondAttribute="trailing" constant="16" id="gsJ-ls-nj7"/>
+                                <constraint firstAttribute="bottom" secondItem="vZN-lh-swy" secondAttribute="bottom" constant="31" id="gvn-R6-fz0"/>
+                                <constraint firstAttribute="trailing" secondItem="58T-11-nzo" secondAttribute="trailing" id="hLS-o5-pqM"/>
+                                <constraint firstItem="58T-11-nzo" firstAttribute="leading" secondItem="cBu-zA-4Cg" secondAttribute="leading" id="rtG-Yp-B4p"/>
+                                <constraint firstAttribute="trailing" secondItem="vZN-lh-swy" secondAttribute="trailing" constant="20" id="x3W-2P-QzI"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gto-Aw-Z4G">
+                            <rect key="frame" x="0.0" y="86" width="414" height="44"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_buddy_heart_icon" translatesAutoresizingMaskIntoConstraints="NO" id="nby-4G-FVM">
+                                    <rect key="frame" x="16" y="10" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="ISm-Hf-KDM"/>
+                                        <constraint firstAttribute="height" constant="24" id="vor-Dn-Euo"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaY-AL-5eg">
+                                    <rect key="frame" x="48" y="11" width="246" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="Bww-8o-j6t"/>
+                                        <constraint firstAttribute="width" constant="246" id="ylC-Kl-8PI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                    <color key="textColor" name="PokeBuddy TextTitle"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYW-qC-W7m">
+                                    <rect key="frame" x="356" y="11" width="42" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="Llz-5t-rA6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                    <color key="textColor" name="PokeBuddy TextContent"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgo-JO-5mO">
+                                    <rect key="frame" x="16" y="43.5" width="398" height="0.5"/>
+                                    <color key="backgroundColor" name="PokeBuddy Seperator"/>
+                                    <color key="tintColor" name="PokeBuddy Seperator"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="0.5" id="SyQ-3W-IUZ"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciy-Jg-CrB">
+                                    <rect key="frame" x="0.0" y="43.5" width="414" height="0.5"/>
+                                    <color key="backgroundColor" name="PokeBuddy Seperator"/>
+                                    <color key="tintColor" name="PokeBuddy Seperator"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="0.5" id="qBi-nC-1ZV"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="ciy-Jg-CrB" secondAttribute="trailing" id="0Kz-xq-vhs"/>
+                                <constraint firstAttribute="height" constant="44" id="1du-rV-e9x"/>
+                                <constraint firstItem="nby-4G-FVM" firstAttribute="top" secondItem="Gto-Aw-Z4G" secondAttribute="top" constant="10" id="2zJ-fj-zoI"/>
+                                <constraint firstAttribute="bottom" secondItem="DaY-AL-5eg" secondAttribute="bottom" constant="11" id="FAj-eM-KjH"/>
+                                <constraint firstAttribute="trailing" secondItem="kgo-JO-5mO" secondAttribute="trailing" id="Lhq-8d-eZd"/>
+                                <constraint firstAttribute="trailing" secondItem="DYW-qC-W7m" secondAttribute="trailing" constant="16" id="QCT-RF-8ec"/>
+                                <constraint firstItem="nby-4G-FVM" firstAttribute="leading" secondItem="Gto-Aw-Z4G" secondAttribute="leading" constant="16" id="Tz0-xW-5cC"/>
+                                <constraint firstAttribute="bottom" secondItem="ciy-Jg-CrB" secondAttribute="bottom" id="e20-p1-LV9"/>
+                                <constraint firstItem="DaY-AL-5eg" firstAttribute="leading" secondItem="nby-4G-FVM" secondAttribute="trailing" constant="8" id="eFj-6l-m8h"/>
+                                <constraint firstAttribute="bottom" secondItem="nby-4G-FVM" secondAttribute="bottom" constant="10" id="hXo-L9-A5k"/>
+                                <constraint firstItem="DYW-qC-W7m" firstAttribute="top" secondItem="Gto-Aw-Z4G" secondAttribute="top" constant="11" id="kSm-Yv-7MU"/>
+                                <constraint firstAttribute="bottom" secondItem="DYW-qC-W7m" secondAttribute="bottom" constant="11" id="sIQ-If-dxN"/>
+                                <constraint firstAttribute="bottom" secondItem="kgo-JO-5mO" secondAttribute="bottom" id="t45-ff-tvI"/>
+                                <constraint firstItem="ciy-Jg-CrB" firstAttribute="leading" secondItem="Gto-Aw-Z4G" secondAttribute="leading" id="uGy-5B-PXM"/>
+                                <constraint firstItem="kgo-JO-5mO" firstAttribute="leading" secondItem="Gto-Aw-Z4G" secondAttribute="leading" constant="16" id="uw7-Dl-xPv"/>
+                                <constraint firstItem="DaY-AL-5eg" firstAttribute="top" secondItem="Gto-Aw-Z4G" secondAttribute="top" constant="11" id="wMy-w2-1Iy"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvW-k9-8r4">
+                            <rect key="frame" x="0.0" y="138" width="414" height="64"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_buddy_time_icon" translatesAutoresizingMaskIntoConstraints="NO" id="EBA-yL-Z1p">
+                                    <rect key="frame" x="16" y="20" width="24" height="24"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="24" id="Vp7-X1-S2L"/>
+                                        <constraint firstAttribute="height" constant="24" id="aVN-4b-L3B"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hh-tg-IBB">
+                                    <rect key="frame" x="48" y="10" width="246" height="44"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="246" id="BS6-rn-WZh"/>
+                                        <constraint firstAttribute="height" constant="44" id="msD-VK-glV"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                    <color key="textColor" name="PokeBuddy TextTitle"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rj-ib-HWF">
+                                    <rect key="frame" x="356" y="21" width="42" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="rdy-pc-egd"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                    <color key="textColor" name="PokeBuddy TextContent"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KlY-zj-JfD">
+                                    <rect key="frame" x="0.0" y="63.5" width="414" height="0.5"/>
+                                    <color key="backgroundColor" name="PokeBuddy Seperator"/>
+                                    <color key="tintColor" name="PokeBuddy Seperator"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="0.5" id="F9u-Xq-a4f"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="EBA-yL-Z1p" secondAttribute="bottom" constant="20" id="12m-Py-l4c"/>
+                                <constraint firstItem="EBA-yL-Z1p" firstAttribute="leading" secondItem="RvW-k9-8r4" secondAttribute="leading" constant="16" id="6pQ-94-LqK"/>
+                                <constraint firstItem="6Hh-tg-IBB" firstAttribute="top" secondItem="RvW-k9-8r4" secondAttribute="top" constant="10" id="PC8-Pq-RNt"/>
+                                <constraint firstItem="KlY-zj-JfD" firstAttribute="leading" secondItem="RvW-k9-8r4" secondAttribute="leading" id="RI1-jA-xVL"/>
+                                <constraint firstAttribute="bottom" secondItem="3Rj-ib-HWF" secondAttribute="bottom" constant="21" id="U9m-w7-tOP"/>
+                                <constraint firstItem="EBA-yL-Z1p" firstAttribute="top" secondItem="RvW-k9-8r4" secondAttribute="top" constant="20" id="ULc-aT-nFO"/>
+                                <constraint firstAttribute="trailing" secondItem="3Rj-ib-HWF" secondAttribute="trailing" constant="16" id="aZl-jw-UAD"/>
+                                <constraint firstAttribute="bottom" secondItem="6Hh-tg-IBB" secondAttribute="bottom" constant="10" id="cdn-Xl-XsW"/>
+                                <constraint firstAttribute="bottom" secondItem="KlY-zj-JfD" secondAttribute="bottom" id="kp1-gI-LCu"/>
+                                <constraint firstItem="3Rj-ib-HWF" firstAttribute="top" secondItem="RvW-k9-8r4" secondAttribute="top" constant="21" id="lby-kP-j6Z"/>
+                                <constraint firstItem="6Hh-tg-IBB" firstAttribute="leading" secondItem="EBA-yL-Z1p" secondAttribute="trailing" constant="8" id="rNt-ID-v7W"/>
+                                <constraint firstAttribute="trailing" secondItem="KlY-zj-JfD" secondAttribute="trailing" id="s8u-eC-TnL"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vjj-Of-BPf">
+                            <rect key="frame" x="0.0" y="130" width="414" height="72"/>
+                            <color key="backgroundColor" name="PokeBuddy Background"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RvW-k9-8r4" secondAttribute="trailing" id="2ZD-70-mMx"/>
+                        <constraint firstAttribute="height" constant="202" id="2mg-0w-WUX"/>
+                        <constraint firstAttribute="trailing" secondItem="cBu-zA-4Cg" secondAttribute="trailing" id="69M-Vq-juc"/>
+                        <constraint firstItem="Gto-Aw-Z4G" firstAttribute="top" secondItem="cBu-zA-4Cg" secondAttribute="bottom" id="Cuh-LS-PFF"/>
+                        <constraint firstItem="Vjj-Of-BPf" firstAttribute="leading" secondItem="yWq-Qj-hly" secondAttribute="leading" id="KPT-Q6-61l"/>
+                        <constraint firstItem="Vjj-Of-BPf" firstAttribute="top" secondItem="Gto-Aw-Z4G" secondAttribute="bottom" id="Mj3-EJ-EgU"/>
+                        <constraint firstItem="cBu-zA-4Cg" firstAttribute="top" secondItem="yWq-Qj-hly" secondAttribute="top" id="SXi-0s-Fct"/>
+                        <constraint firstItem="Gto-Aw-Z4G" firstAttribute="leading" secondItem="yWq-Qj-hly" secondAttribute="leading" id="YzY-N9-Ba0"/>
+                        <constraint firstItem="RvW-k9-8r4" firstAttribute="top" secondItem="Gto-Aw-Z4G" secondAttribute="bottom" constant="8" id="c1X-bh-CFX"/>
+                        <constraint firstAttribute="trailing" secondItem="Gto-Aw-Z4G" secondAttribute="trailing" id="gU3-zz-xNG"/>
+                        <constraint firstAttribute="bottom" secondItem="RvW-k9-8r4" secondAttribute="bottom" id="lWw-ky-7aX"/>
+                        <constraint firstItem="cBu-zA-4Cg" firstAttribute="leading" secondItem="yWq-Qj-hly" secondAttribute="leading" id="qem-3d-REx"/>
+                        <constraint firstAttribute="trailing" secondItem="Vjj-Of-BPf" secondAttribute="trailing" id="tl2-Lm-pOw"/>
+                        <constraint firstItem="RvW-k9-8r4" firstAttribute="leading" secondItem="yWq-Qj-hly" secondAttribute="leading" id="uE2-yW-bBi"/>
+                        <constraint firstAttribute="bottom" secondItem="Vjj-Of-BPf" secondAttribute="bottom" id="zQf-ZO-JyR"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Qj-X0-KZa">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="QMp-fA-xPT">
+                            <rect key="frame" x="188.5" y="390.5" width="37" height="37"/>
+                            <color key="color" name="PokeBuddy Green"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" name="PokeBuddy Background"/>
+                    <constraints>
+                        <constraint firstItem="QMp-fA-xPT" firstAttribute="centerX" secondItem="0Qj-X0-KZa" secondAttribute="centerX" id="CqG-SR-MNF"/>
+                        <constraint firstItem="QMp-fA-xPT" firstAttribute="centerY" secondItem="0Qj-X0-KZa" secondAttribute="centerY" id="usl-mV-end"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0Qj-X0-KZa" secondAttribute="bottom" id="2JJ-uC-X1g"/>
+                <constraint firstItem="0Qj-X0-KZa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="AN2-kQ-LZ5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yWq-Qj-hly" secondAttribute="trailing" id="Ofp-eO-zgB"/>
+                <constraint firstItem="0Qj-X0-KZa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XtR-xl-p3l"/>
+                <constraint firstItem="yWq-Qj-hly" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dRO-yi-eVl"/>
+                <constraint firstItem="yWq-Qj-hly" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="36" id="irL-pF-UTC"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0Qj-X0-KZa" secondAttribute="trailing" id="rfU-yS-NwH"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="69.642857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="my_buddy_avatar_icon" width="54" height="54"/>
+        <image name="my_buddy_heart_icon" width="24" height="24"/>
+        <image name="my_buddy_time_icon" width="24" height="24"/>
+        <namedColor name="PokeBuddy Background">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PokeBuddy Green">
+            <color red="0.094117647058823528" green="0.64313725490196083" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PokeBuddy Seperator">
+            <color red="0.77254901960784317" green="0.77254901960784317" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PokeBuddy TextContent">
+            <color red="0.38823529411764707" green="0.41568627450980394" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="PokeBuddy TextTitle">
+            <color red="0.098039215686274508" green="0.12549019607843137" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
